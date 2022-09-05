@@ -1,0 +1,46 @@
+{
+    "name": "InputManager",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "1dc90e19-e6f2-45db-b7c0-5f9717e1301f",
+            "actions": [
+                {
+                    "name": "Touchscreen",
+                    "type": "PassThrough",
+                    "id": "45e643a6-2463-4dbb-855e-2783d0ccd4e0",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "1311cd33-2818-4b21-8cec-ea61ebf464a7",
+                    "path": "<Touchscreen>/primaryTouch/startPosition",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "Mobile",
+                    "action": "Touchscreen",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Mobile",
+            "bindingGroup": "Mobile",
+            "devices": [
+                {
+                    "devicePath": "<Touchscreen>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
