@@ -29,16 +29,6 @@ namespace MatchPicture.Gameplay.TileObject
             _model.ObjectType = objectType;
         }
 
-        // public int GetObjectId()
-        // {
-        //     return _model.ObjectId;
-        // }
-
-        // public int GetObjectType()
-        // {
-        //     return _model.ObjectType;
-        // }
-
         private void OnClick()
         {
             Publish<TileClickMessage>(new TileClickMessage(_model.ObjectId, _model.ObjectType));

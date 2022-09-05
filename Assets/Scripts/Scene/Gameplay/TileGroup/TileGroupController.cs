@@ -53,9 +53,9 @@ namespace MatchPicture.Gameplay.TileGroup
             TileObjectView tileObjectView = tileObject.GetComponent<TileObjectView>();
             tileObjectView.GetComponent<SpriteRenderer>().sprite = _sprites[type % _sprites.Length];
             TileObjectController tileObjectController = new TileObjectController();
-            tileObjectController.SetObjectType(type % _sprites.Length);
             InjectDependencies(tileObjectController);
             tileObjectController.Init(tileObjectModel, tileObjectView);
+            tileObjectController.SetObjectType(type % _sprites.Length);
 
             return tileObjectController;
         }
